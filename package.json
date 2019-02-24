@@ -1,14 +1,22 @@
 {
   "name": "pg-utl",
-  "version": "0.0.2",
-  "description": "",
+  "version": "0.0.3",
+  "description": "PostGresql UTiLities",
   "main": "index.js",
   "scripts": {
     "test": "jest"
   },
   "keywords": [],
-  "author": "",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/leonmaks/pg-utl.git"
+  },
+  "author": "leonmaks",
   "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/leonmaks/pg-utl/issues"
+  },
+  "homepage": "https://github.com/leonmaks/pg-utl#readme",
   "dependencies": {
     "import-lazy": "^3.1.0",
     "module-alias": "^2.2.0",
