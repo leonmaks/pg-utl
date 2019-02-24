@@ -1,0 +1,9 @@
+SELECT
+  ${columns^}
+FROM
+  ${from_items^}
+${where^}
+${group_by^}
+${having^}
+${order_by^}
+${limit^}
