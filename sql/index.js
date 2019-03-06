@@ -2,8 +2,7 @@
 
 const path = require("path")
 
-const stmt = require("@root/stmt")
-
+const { stmt } = require("@root")
 
 
 module.exports = {
@@ -29,5 +28,4 @@ module.exports = {
   // Trigger
   trigger_create: stmt(path.join(__dirname, "./trigger/create.sql"), { minify: true }),
   trigger_drop: stmt(path.join(__dirname, "./trigger/drop.sql"), { minify: true }),
-
 }
