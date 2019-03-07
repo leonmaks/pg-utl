@@ -1,11 +1,5 @@
 "use strict"
 
-const malias = require("module-alias")
-malias.addAliases({
-  "@root": __dirname,
-  "@sql": `${__dirname}/sql`,
-})
-
 const importLazy = require("import-lazy")(require)
 
 let pgp

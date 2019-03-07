@@ -2,7 +2,7 @@
 
 const path = require("path")
 
-const { stmt } = require("@root")
+const { stmt } = require("../")
 
 
 module.exports = {

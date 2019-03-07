@@ -1,6 +1,6 @@
 {
   "name": "pg-utl",
-  "version": "0.0.6",
+  "version": "0.0.7",
   "description": "PostGresql UTiLities",
   "main": "index.js",
   "scripts": {
@@ -22,7 +22,6 @@
   "dependencies": {
     "bluebird": "^3.5.3",
     "import-lazy": "^3.1.0",
-    "module-alias": "^2.2.0",
     "pg-monitor": "^1.1.0",
     "pg-promise": "^8.6.2"
   },
