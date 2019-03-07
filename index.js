@@ -13,9 +13,22 @@ let pgp
 
 module.exports = {
 
-  init: options => {
-    pgp = require("pg-promise")(options || { promiseLib: require("bluebird") })
-    return pgp
+  init: params => {
+
+    let params_ = params
+
+    if (!params_) {
+      params_ = { promiseLib: require("bluebird") }
+
+      if (process.env.DEBUG) {
+        const monitor = require("pg-monitor")
+        monitor.setTheme("monochrome")
+        monitor.attach(params_)
+      }
+    }
+
+    module.exports.pgp = pgp = require("pg-promise")(params_)
+    return module.exports
   },
 
   pgp,
