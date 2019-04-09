@@ -6,7 +6,7 @@
   "scripts": {
     "test": "jest",
     "create-links": "npm link tittles",
-    "clean": "rm -rf node_modules package-lock.json"
+    "clean": "rm -rf node_modules package-lock.json yarn.lock"
   },
   "keywords": [],
   "repository": {
