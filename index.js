@@ -1,7 +1,5 @@
 "use strict"
 
-const importLazy = require("import-lazy")(require)
-
 let pgp
 
 
@@ -43,12 +41,12 @@ module.exports = {
   },
 
   // Generic
-  pg_select: importLazy("./lib/generic/pg_select"),
-  pg_insert: importLazy("./lib/generic/pg_insert"),
-  pg_update: importLazy("./lib/generic/pg_update"),
-  pg_delete: importLazy("./lib/generic/pg_delete"),
-  pg_insert_ver: importLazy("./lib/generic/pg_insert_ver"),
+  pg_select: require("./lib/generic/pg_select"),
+  pg_insert: require("./lib/generic/pg_insert"),
+  pg_update: require("./lib/generic/pg_update"),
+  pg_delete: require("./lib/generic/pg_delete"),
+  pg_insert_ver: require("./lib/generic/pg_insert_ver"),
 
   // TODO: ...
-  columns: importLazy("./lib/catalog/columns"),
+  columns: require("./lib/catalog/columns"),
 }
